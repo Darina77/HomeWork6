@@ -2,7 +2,7 @@ package com.mycompany.app.dao.interfaces;
 import com.mycompany.app.entities.Reward;
 
 public interface RewardDao {
-    Reward addReward(Reward lecture);
+    Reward addReward(Reward reward);
     Reward getReward(int id);
-    void saveReward(Reward lecture);
+    void saveReward(Reward reward);
 }

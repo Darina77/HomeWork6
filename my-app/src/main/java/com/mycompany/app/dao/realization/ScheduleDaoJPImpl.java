@@ -14,16 +14,16 @@ public class ScheduleDaoJPImpl
     @PersistenceContext
     private EntityManager em;
 
-    public Schedule addSchedule(Schedule schedule) {
-        em.persist(schedule);
-        return schedule;
+    public Schedule addSchedule(Schedule sinceWork) {
+        em.persist(sinceWork);
+        return sinceWork;
     }
 
     public Schedule getSchedule(int id) {
         return em.find(Schedule.class,id);
     }
 
-    public void saveSchedule(Schedule schedule) {
-        em.merge(schedule);
+    public void saveSchedule(Schedule sinceWork) {
+        em.merge(sinceWork);
     }
 }

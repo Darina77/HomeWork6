@@ -36,10 +36,10 @@ public class Lecture
     @OneToMany(cascade = {CascadeType.MERGE})
     @JoinColumn(name = "lecture_fk")
     private List<SinceWork> works = new ArrayList<SinceWork>();
-    /*@OneToMany
+    @OneToMany
     @JoinColumn(name = "lector_id")
     private List<Schedule> schedules = new ArrayList<Schedule>();
-*/
+
     public byte[] getPhoto() {
         return photo;
     }
@@ -87,7 +87,7 @@ public class Lecture
     public void setWorks(List<SinceWork> works) {
         this.works = works;
     }
-/*
+
     public List<Schedule> getSchedules() {
         return schedules;
     }
@@ -95,7 +95,7 @@ public class Lecture
     public void setSchedules(List<Schedule> schedules) {
         this.schedules = schedules;
     }
-*/
+
     public int getId() {
         return id;
     }

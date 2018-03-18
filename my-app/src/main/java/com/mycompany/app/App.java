@@ -51,24 +51,20 @@ public class App {
         sinceWorksList.add(sinceWork);
         lecture.setWorks(sinceWorksList);
         SinceWorkWorker worker4 = (SinceWorkWorker) context.getBean("worker4");
-        /*Schedule schedule = new Schedule();
+        Schedule schedule = new Schedule();
         schedule.setDay(2);
         schedule.setLesson(2);
         List<Schedule> scheduleList = new ArrayList<Schedule>();
         scheduleList.add(schedule);
-      //  lecture.setSchedules(scheduleList);
-        //group.setSchedules(scheduleList);
-        ScheduleWorker worker5 = (ScheduleWorker) context.getBean("worker5");*/
+        lecture.setSchedules(scheduleList);
+        group.setSchedules(scheduleList);
+        ScheduleWorker worker5 = (ScheduleWorker) context.getBean("worker5");
         worker1.addGroup(group);
         worker4.addSinceWork(sinceWork);
         worker2.addPosition(position);
         worker3.addReward(reward);
         worker.addLecture(lecture);
-
-
-
-
-        /*worker5.addSchedule(schedule);*/
+        worker5.addSchedule(schedule);
     }
 
 }
